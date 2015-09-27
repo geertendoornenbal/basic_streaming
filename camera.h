@@ -1,10 +1,15 @@
 #ifndef CAMERA_H
 #define CAMERA_H
+#include <opencv2/opencv.hpp>
 
-class camera
+class Camera
 {
 public:
-    camera();
+    Camera();
+    virtual void Initialize() = 0;
+    virtual cv::Mat* GrabImage();
+protected:
+    virtual cv::VideoCapture GetCamera();
 };
 
 #endif // CAMERA_H

@@ -14,10 +14,13 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    cvimagewidget.cpp
+    camerarasppi.cpp \
+    camera.cpp
 
 HEADERS  += mainwindow.h \
-    cvimagewidget.h
+    cvimagewidget.h \
+    camerarasppi.h \
+    camera.h
 
 INCLUDEPATH += /usr/local/include/opencv
 LIBS += -L/usr/local/lib
@@ -33,7 +36,12 @@ LIBS += -lopencv_contrib
 LIBS += -lopencv_legacy
 LIBS += -lopencv_flann
 LIBS += -lopencv_nonfree
-LIBS += -lraspicam
-LIBS += -lraspicam_cv
+
+#LIBS += -lraspicam
+#LIBS += -lraspicam_cv
+
 
 FORMS    += mainwindow.ui
+
+OTHER_FILES += \
+    Lenna.png
