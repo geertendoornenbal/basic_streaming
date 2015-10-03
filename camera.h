@@ -9,7 +9,7 @@ public:
     virtual void Initialize() = 0;
     virtual cv::Mat* GrabImage();
 protected:
-    virtual cv::VideoCapture GetCamera();
+    virtual cv::VideoCapture* GetCamera() = 0;
 };
 
 #endif // CAMERA_H

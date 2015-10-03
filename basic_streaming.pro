@@ -15,12 +15,14 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     camerarasppi.cpp \
-    camera.cpp
+    camera.cpp \
+    cameraimages.cpp
 
 HEADERS  += mainwindow.h \
     cvimagewidget.h \
     camerarasppi.h \
-    camera.h
+    camera.h \
+    cameraimages.h
 
 INCLUDEPATH += /usr/local/include/opencv
 LIBS += -L/usr/local/lib
