@@ -1,2 +1,5 @@
 *.pro.user
 /.project
+*.o
+*.pro.user.3fd3b68.2.6pre1
+moc_*.cpp
