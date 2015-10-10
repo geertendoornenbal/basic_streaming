@@ -16,13 +16,15 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     camerarasppi.cpp \
     camera.cpp \
-    cameraimages.cpp
+    cameraimages.cpp \
+    mainapplication.cpp
 
 HEADERS  += mainwindow.h \
     cvimagewidget.h \
     camerarasppi.h \
     camera.h \
-    cameraimages.h
+    cameraimages.h \
+    mainapplication.h
 
 INCLUDEPATH += /usr/local/include/opencv
 LIBS += -L/usr/local/lib

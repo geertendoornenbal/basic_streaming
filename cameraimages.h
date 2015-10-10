@@ -6,7 +6,10 @@ class CameraImages : public Camera
 {
 public:
     CameraImages(std::string aPath);
+    virtual ~CameraImages();
     void Initialize();
+protected:
+    cv::VideoCapture* GetCamera();
 private:
     std::string* mImagePath;
     cv::VideoCapture* mImageCapture;
